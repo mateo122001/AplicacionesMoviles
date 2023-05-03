@@ -25,6 +25,20 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             EvaluacionTheme {
+         Surface(
+          modifier = Modifier.fillMaxSize(),
+          color = MaterialTheme.colors.background
+    ) {
+          Scaffold(
+           topBar = {
+               TopAppBar(title={ Text(text = "Laptops")})
+           }
+       ) { padding->
+           MediaList(laptopList = Datasource().loadLaptops(),
+               modifier = Modifier.padding(padding))
+       }
+    }
+
             }
         }
     }
