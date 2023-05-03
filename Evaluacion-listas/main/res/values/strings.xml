@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Evaluacion</string>
+    
+    <string name="descripcionLaptop1">Lenovo</string>
+    <string name="descripcionLaptop2">Dell</string>
+    <string name="descripcionLaptop3">Apple</string>
+    <string name="descripcionLaptop4">Acer</string>
+
+</resources>
